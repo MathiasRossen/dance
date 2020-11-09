@@ -13,7 +13,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">
-          <img src="logo_hvid.png" height="50" class="d-inline-block align-top" alt="Campus Dance Academy" loading="lazy">
+          <%= image_tag "logo_hvid", height: 50, class: "d-inline-block align-top ml-2", alt: "Campus Dance Academy" %>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,11 +36,11 @@
         <%= yield %>
       </div>
 
-      <footer class="container">
-        <p class="float-right"><a href="#">Tilbage til toppen</a></p>
-        <img src="logo_sort.png" height="50" class="d-inline-block" alt="Campus Dance Academy" loading="lazy">
-      </footer>
 
     </main>
+    <footer class="container">
+      <p class="float-right"><a href="#">Tilbage til toppen</a></p>
+      <%= image_tag "logo_sort", height: 50, class: "d-inline-block", alt: "Campus Dance Academy" %>
+    </footer>
   </body>
 </html>
